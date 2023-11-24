@@ -1,6 +1,9 @@
 import Icons from "@/components/Icons"
 import Call from "./call"
 import Sc from "./Sc"
+import Figma from "./figma"
+import Git from "./git"
+import Twitter from "./twitter"
 export default function Contact(){
     return(
         <div className="contact">
@@ -10,15 +13,21 @@ export default function Contact(){
             </div>
             <div>
             <div className="contact-2">
-                <button><Icons/></button>
+                     <Icons/>
                 <h2>reachsagarshah@gmail.com</h2>
-                <button><Sc/></button>
+                     <Sc/>
             </div>
             <div className="contact-2">
-                <button><Call/></button>
+                     <Call/>
                 <h1>+91 8980500565</h1>
-                <button><Sc/></button>
+                      <Sc/>
             </div>
+                <p>You may also find me on these platforms!</p>
+                <div>
+                    <Git/>
+                    <Twitter/>
+                    <Figma/>
+                </div>
             </div>
             <div>
 

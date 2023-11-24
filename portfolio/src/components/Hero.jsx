@@ -29,9 +29,9 @@ export default function Hero(){
                     </div>
                  </div>
                  <div className="icons">
-                    <button><Git/></button>
-                    <button><Twitter/></button>
-                    <button><Figma/></button>
+                    <Git/>
+                    <Twitter/>
+                    <Figma/>
                  </div>
             </div>
             <div className="imgsec">

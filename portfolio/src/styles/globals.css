@@ -118,6 +118,10 @@ section{
   position: relative;
   left: 80px;
 }
+.darkmode{
+  background-color: red;
+  color: blue;
+}
 .about{
   width: 1440px;
   height: 962px;

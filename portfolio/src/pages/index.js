@@ -12,6 +12,7 @@ export default function Home() {
 
   const clickHandler = () => {
     setIsDark(!isDark);
+    console.log('jambaa lalar');
   };
 
   return (

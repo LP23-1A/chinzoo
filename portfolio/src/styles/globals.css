@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
   margin: 0;
   padding: 0;
@@ -7,7 +11,6 @@ header{
   display: flex;
   justify-content: space-between;
   height: fit-content;
-  /* border: 1px solid black; */
   align-items: center;
   width: 1280px;
   padding: 0 32px 0 32px;
@@ -51,7 +54,6 @@ ul{
 .hero{
   width: 1440px;
   height: 360px;
-  /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   padding: 96px 80px;
@@ -317,7 +319,6 @@ section{
   height: 480px;
   width: auto;
   display: flex;
-  justify-content: ;
 }
 .work-1-1{
   height: 480px;
@@ -356,7 +357,6 @@ section{
 .contact{
   width: 1440px;
   height: 560px;
-  border: 1px solid black;
   padding: 96px 80px;
   display: flex;
   flex-direction: column;
@@ -401,4 +401,14 @@ section{
   border-radius: 12px;
   background: var(--gray-200, #E5E7EB);
   border: none;
+}
+footer{
+  width: 1440px;
+  height: 68px;
+  padding: 24px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background: var(--gray-50, #F9FAFB);
 }

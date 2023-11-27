@@ -2,10 +2,10 @@ import Svg from "@/components/Svg";
 import Logo from "@/components/logo"
 export default function Navbar() {
   return (
-    <header>
+    <header className=" flex bg-blue">
       <div><Logo/></div>
-      <div className="navi">
-        <ul >
+      <div className="navi flex justify-between">
+        <ul className=" flex">
           <li>about</li>
           <li>work</li>
           <li>testimonials</li>

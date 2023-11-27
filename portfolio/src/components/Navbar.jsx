@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <header className=" flex bg-blue">
       <div><Logo/></div>
-      <div className="navi flex justify-between">
+      <div className="navi flex justify-between bg-slate-200 align-middle w[1440px] border-spacing-1">
         <ul className=" flex">
           <li>about</li>
           <li>work</li>

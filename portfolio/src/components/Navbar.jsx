@@ -2,18 +2,19 @@ import Svg from "@/components/Svg";
 import Logo from "@/components/logo"
 export default function Navbar() {
   return (
-    <header className=" flex bg-blue">
+    
+    <header className="w-full flex justify-between p-[80px]">
       <div><Logo/></div>
-      <div className="navi flex justify-between bg-slate-200 align-middle w[1440px] border-spacing-1">
-        <ul className=" flex">
+      <div className="flex justify-center items-center padding-[16px] gap-[24px]">
+        <ul className=" flex justify-center items-center gap-[24px]">
           <li>about</li>
           <li>work</li>
           <li>testimonials</li>
           <li>contact</li>
         </ul>
-       <div className="buttons">
+       <div className="flex items-center gap-[16px]">
         <button className="sun"><Svg/></button>
-        <button className="dwbtn">download CV</button>
+        <button className=" bg-black text-white p-[8px] rounded-[8px]">download CV</button>
        </div>
       </div>
     </header>

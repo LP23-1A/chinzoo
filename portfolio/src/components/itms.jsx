@@ -72,8 +72,8 @@ export default function  Itms() {
         {
             data.map((el) => {
                 return (
-                    <div className="Icon-dev">
-                        <img className="img-icons" src={el.url} alt="" />
+                    <div className="flex flex-col justify-center items-center gap-[8px]">
+                        <img className="w-16 h-16" src={el.url} alt="" />
                         <p>{el.content}</p>
                     </div>
                 )

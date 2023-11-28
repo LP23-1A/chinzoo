@@ -2,13 +2,13 @@ import Logoexp from "./logoexp"
 
 export default function Experience (){
     return(
-        <div className="Experience">
-            <div className="exp-container">
-                <div className="Exp-1">
-                    <button>Experience</button>
+        <div className=" bg-slate-100 flex justify-center p-[80px]">
+            <div className="flex flex-col justify-center gap-[48px]">
+                <div className="flex flex-col justify-center items-center gap-[16px]">
+                    <button className="bg-black text-white p-[8px] rounded-[8px]">Experience</button>
                     <h2>Here is a quick summary of my most recent experiences:</h2>
                 </div>
-                <div className="Exp-2">
+                <div className="flex justify-between bg-white p-[32px] rouded-[8px]">
                     <div><Logoexp/></div>
                     <div>
                         <div>
@@ -25,7 +25,7 @@ export default function Experience (){
                         <p>Nov 2021 - Present</p>
                     </div>
                 </div>
-                <div className="Exp-2">
+                <div className="flex justify-between bg-white p-[32px] ">
                     <div><Logoexp/></div>
                     <div>
                         <div>
@@ -42,7 +42,7 @@ export default function Experience (){
                         <p>Jul 2017 - Oct 2021</p>
                     </div>
                 </div>
-                <div className="Exp-2">
+                <div className="flex justify-between bg-white p-[32px]">
                     <div><Logoexp/></div>
                     <div>
                         <div>

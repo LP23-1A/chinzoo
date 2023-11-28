@@ -6,12 +6,14 @@ import Heroimg from "./Heroimg";
 
 export default function Hero() {
   return (
-    <div className="hero">
-      <div className="text">
+    <div className="hero flex gap-8 text-center md:text-left p-[80px]">
+      <div className="flex flex-col gap-[48px]">
         <div>
-          <h1>Hi, I’m Sagar 👋</h1>
+          <h1 className="text-[60px] font-semibold">
+            Hi, I’m Sagar 👋
+          </h1>
           <br />
-          <p>
+          <p className=" w-2/3">
             I'm a full stack developer (React.js & Node.js) with a focus on
             creating (and occasionally designing) exceptional digital
             experiences that are fast, accessible, visually appealing, and
@@ -19,17 +21,17 @@ export default function Hero() {
             over 7 years, I still love it as if it was something new.
           </p>
         </div>
-        <div>
-          <div className="sd">
-            <Loc />
-            <p>Ahmedabad, India</p>
-          </div>
-          <div className="proj">
-            <button className="dot"></button>
-            <p>Available for new projects</p>
-          </div>
+        <div className="flex flex-col gap-[8px]">
+            <div className="flex">
+              <Loc />
+              <p>Ahmedabad, India</p>
+            </div>
+            <div className="flex items-center">
+              <button className="bg-green-400 w-[10px] h-[10px] rounded-[50%] m-[6.5px]"></button>
+              <p>Available for new projects</p>
+            </div>
         </div>
-        <div className="icons">
+        <div className="icons flex gap-[10px]">
           <Git />
           <Twitter />
           <Figma />

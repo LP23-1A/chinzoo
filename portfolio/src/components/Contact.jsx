@@ -6,25 +6,27 @@ import Git from "./git"
 import Twitter from "./twitter"
 export default function Contact(){
     return(
-        <div className="contact">
-            <div className="contact-1">
-                <button >Get in touch</button>
+        <div className="flex flex-col justify-center items-center p-[80px]">
+            <div className="flex  flex-col justify-center items-center gap-[16px]">
+                <button className="bg-black text-white p-[8px] rounded-[8px]" >Get in touch</button>
                 <p>What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.</p>
             </div>
-            <div>
-                <div className="contact-2">
+            <div className="flex flex-col gap-[48px]">
+               <div>
+               <div className="flex justify-center items-center gap-[20px]">
                         <Icons/>
-                    <h2>reachsagarshah@gmail.com</h2>
+                    <h1 className="text-[30px]">reachsagarshah@gmail.com</h1>
                         <Sc/>
                 </div>
-                <div className="contact-2">
+                <div className="flex justify-center items-center gap-[20px]">
                         <Call/>
-                    <h1>+91 8980500565</h1>
+                    <h1 className="text-[30px]">+91 8980500565</h1>
                         <Sc/>
                 </div>
-                <div className="contact-3s">
+               </div>
+                <div className="flex flex-col justify-center items-center gap-[8px]">
                     <p>You may also find me on these platforms!</p>
-                    <div>
+                    <div className="flex justify-center">
                         <Git/>
                         <Twitter/>
                         <Figma/>

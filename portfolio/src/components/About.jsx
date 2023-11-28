@@ -3,7 +3,7 @@ export default function About(){
     return(
         <div className="flex flex-col justify-center items-center p-[80px] bg-slate-100 gap-[48px]">
             <div className="top">
-                <button className="padding-[16px] bg-black text-white rounded-[8px] p-[4px] bot">About me</button>
+                <button className="padding-[16px] bg-zinc-300 rounded-[8px] p-[4px] bot">About me</button>
             </div>
             <div className="flex justify-around">
                 <div className="left">

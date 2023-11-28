@@ -36,7 +36,7 @@ export default function Button() {
         {buttons.map((el) => {
         return (
             <div>
-                <button className="bg-black text-white p-[8px] rounded-[4px]">
+                <button className="bg-zinc-300 p-[8px] rounded-[4px]">
                     <p className="buttp">{el.name}</p>
                 </button>
             </div>

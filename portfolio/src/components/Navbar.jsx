@@ -14,7 +14,7 @@ export default function Navbar() {
         </ul>
        <div className="flex items-center gap-[16px]">
         <button className="sun"><Svg/></button>
-        <button className=" bg-black text-white p-[8px] rounded-[8px]">download CV</button>
+        <button className=" bg-zinc-300 p-[8px] rounded-[8px]">download CV</button>
        </div>
       </div>
     </header>

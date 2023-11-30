@@ -2,10 +2,9 @@ import Svg from "@/components/Svg";
 import Logo from "@/components/logo"
 
 export default function Navbar({Darktheme}) {
+  
   return (
-    
-    
-    <header className="flex justify-between p-[80px]">
+   <header className="flex justify-between p-[80px]">
       <div><Logo/></div>
       <div className="flex justify-center items-center padding-[16px] gap-[24px]">
         <ul className=" flex justify-center items-center gap-[24px]">

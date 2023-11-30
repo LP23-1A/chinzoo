@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 
 
 export default function Home() {
-  const [isDark, setIsDark] = useState(true)
+  const [isDark, setIsDark] = useState(false)
     const Darktheme = () => {
       setIsDark(!isDark)
       console.log('sda');
@@ -21,7 +21,7 @@ export default function Home() {
       <section className={`container flex flex-col justify-center w-full px-4 md:max-w-[1280px] md:mx-auto max-w-3xl ${isDark && `black-theme bg-black text-white`}`}>
         <Navbar  Darktheme={Darktheme} isDark={isDark}/>
         <Hero />
-        <About/>
+        <About />
         <Skils/>
         <Experience />
         <Work />

@@ -2,7 +2,10 @@ import Svg from "@/components/Svg";
 import Logo from "@/components/logo"
 
 export default function Navbar({Darktheme}) {
-  
+  const themeToggle = () => {
+    if (theme === "light") setTheme("dark");
+    else setTheme("light");
+  };
   return (
    <header className="flex justify-between p-[80px]">
       <div><Logo/></div>

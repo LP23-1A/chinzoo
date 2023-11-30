@@ -1,4 +1,5 @@
 import Heroimg2 from "./Heroimg2"
+import Home from "@/pages"
 export default function About(){
     return(
         <div className="flex flex-col justify-center items-center p-[80px] bg-slate-100 gap-[48px] w-full">

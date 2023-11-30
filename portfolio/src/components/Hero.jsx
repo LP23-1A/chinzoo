@@ -6,7 +6,7 @@ import Heroimg from "./Heroimg";
 
 export default function Hero() {
   return (
-    <div className="hero flex gap-8 text-center md:text-left p-[80px]">
+    <div className="container flex gap-8 text-center md:text-left p-[80px] max-w-7xl">
       <div className="flex flex-col gap-[48px]">
         <div>
           <h1 className="text-[60px] font-semibold">

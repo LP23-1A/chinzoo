@@ -11,22 +11,18 @@ import Footer from "@/components/Footer";
 
 
 export default function Home() {
-  const [isDark, setIsDark] = useState(false);
-
-  const clickHandler = () => {
-    console.log(sda);
-  }
-  const Darktheme = () => {
-    setIsDark(!isDark);
-  };
-
+  const [isDark, setIsDark] = useState(true)
+    const Darktheme = () => {
+      setIsDark(!isDark)
+      console.log('sda');
+    }
   return (
-    <div className={`body max-w-[1440px] justify-center items-center m-auto ${isDark ? 'black-theme bg-black' : ''}`}>
-      <section className={`container flex flex-col justify-center ${isDark ? 'bg-black' : ''}`}>
-        <Navbar Darktheme={Darktheme} isDark={isDark}/>
+    <div className={`body max-w-[1440px]  justify-center items-center m-auto ${isDark && `bg-black text-black`}`}>
+      <section className={`container flex flex-col justify-center w-full px-4 md:max-w-[1280px] md:mx-auto max-w-3xl ${isDark && `black-theme bg-black text-white`}`}>
+        <Navbar  Darktheme={Darktheme} isDark={isDark}/>
         <Hero />
-        <About />
-        <Skils />
+        <About/>
+        <Skils/>
         <Experience />
         <Work />
         <Contact />
@@ -35,27 +31,4 @@ export default function Home() {
     </div>
   );
 }
-// export default function Home() {
-//   const clickHandler = () => {
-//      const [isDark, setIsDark] = useState(false)
-//     const Darktheme = () => {
-//       setIsDark(!isDark)
-//   };
-// }
-
-//   return (
-//    <div className={`body w-[100%] flex flex-col items-center justify-center" ${isDark && `black-theme bg-black`}`} >
-//      <section className={`"navi" ${isDark && `bg-black`}`}>
-//         <Navbar  Darktheme={Darktheme} isDark={isDark}/>
-//         <Hero />
-//         <About />
-//         <Skils />
-//         <Experience />
-//         <Work />
-//         <Contact />
-//         <Footer/>
-//     </section>
-//    </div>
-//   );
-// }
 

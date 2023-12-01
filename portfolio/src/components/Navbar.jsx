@@ -27,6 +27,7 @@ export default function Navbar({Darktheme}) {
         <button className=" bg-zinc-300 p-[8px] rounded-[8px] dark:text-black">download CV</button>
        </div>
       </div>
+      <div></div>
     </header>
   );
 }

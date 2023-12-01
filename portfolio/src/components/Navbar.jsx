@@ -1,11 +1,17 @@
 import Svg from "@/components/Svg";
 import Logo from "@/components/logo"
+import { useTheme } from "next-themes";
 
 export default function Navbar({Darktheme}) {
-  const themeToggle = () => {
-    if (theme === "light") setTheme("dark");
-    else setTheme("light");
-  };
+  const { theme, setTheme } = useTheme()
+  const ThemeToggle = () => {
+    if (theme == "dark") {
+      setTheme("light");
+    }
+    if (theme == "light" || theme == "system") {
+      setTheme("dark");
+    }
+  }
   return (
    <header className="flex justify-between p-[80px]">
       <div><Logo/></div>
@@ -17,8 +23,8 @@ export default function Navbar({Darktheme}) {
           <li>contact</li>
         </ul>
        <div className="flex items-center gap-[16px]">
-        <button className="sun" onClick={Darktheme} ><Svg/></button>
-        <button className=" bg-zinc-300 p-[8px] rounded-[8px]">download CV</button>
+        <button className="" onClick={ThemeToggle} ><Svg/></button>
+        <button className=" bg-zinc-300 p-[8px] rounded-[8px] dark:text-black">download CV</button>
        </div>
       </div>
     </header>

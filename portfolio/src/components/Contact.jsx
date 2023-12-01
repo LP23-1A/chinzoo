@@ -8,7 +8,7 @@ export default function Contact(){
     return(
         <div className="flex flex-col justify-center items-center p-[80px]">
             <div className="flex  flex-col justify-center items-center gap-[16px]">
-                <button className="bg-zinc-300 p-[8px] rounded-[8px]" >Get in touch</button>
+                <button className="bg-zinc-300 p-[8px] rounded-[8px] dark:bg-[#374151]" >Get in touch</button>
                 <p>What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.</p>
             </div>
             <div className="flex flex-col gap-[48px]">

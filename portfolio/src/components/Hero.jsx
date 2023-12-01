@@ -38,7 +38,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="relartive">
-        <div className="w-[280px] h-[320px] bg-[#E5E7EB] relative left-10  "></div>
+        <div className="w-[280px] h-[320px] bg-[#E5E7EB] relative left-10  dark:bg-[#374151] "></div>
         <Heroimg />
       </div>
     </div>

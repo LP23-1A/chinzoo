@@ -2,13 +2,13 @@ import Heroimg2 from "./Heroimg2"
 import Home from "@/pages"
 export default function About(){
     return(
-        <div className="flex flex-col justify-center items-center p-[80px] bg-slate-100 gap-[48px] w-full">
+        <div className="flex flex-col justify-center items-center p-[80px] bg-slate-100 gap-[48px] w-full dark:bg-red-500">
             <div className="top">
                 <button className="padding-[16px] bg-zinc-300 rounded-[8px] p-[4px] bot">About me</button>
             </div>
-            <div className="flex justify-between flex-wrap max-sm:">
-                <div className="left">
-                    <div className="w-[400px]"></div>
+            <div className="flex sm-[flex-wrap]">
+                <div className="w-[584px] h-[694px] relative">
+                    <div className="w-[400px] h-[480px] bg-[#E5E7EB] border-8-white relative top-10 "></div>
                     <Heroimg2/>
                 </div>
                 <div className="max-w-[514px] border-solid ">

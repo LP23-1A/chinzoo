@@ -20,8 +20,8 @@ export default function Home() {
     <div className={`body max-w-[1440px]  justify-center items-center m-auto ${isDark && `bg-black text-black`}`}>
       <section className={`container flex flex-col justify-center w-full px-4 md:max-w-[1280px] md:mx-auto max-w-3xl ${isDark && `black-theme bg-black text-white`}`}>
         <Navbar  Darktheme={Darktheme} isDark={isDark}/>
-        <Hero />
-        <About />
+        <Hero  />
+        <About  Darktheme={Darktheme} isDark={isDark} />
         <Skils/>
         <Experience />
         <Work />

@@ -37,8 +37,8 @@ export default function Hero() {
           <Figma />
         </div>
       </div>
-      <div className="imgsec">
-        <div className="gray"></div>
+      <div className="relartive">
+        <div className="w-[280px] h-[320px] bg-[#E5E7EB] relative left-10  "></div>
         <Heroimg />
       </div>
     </div>

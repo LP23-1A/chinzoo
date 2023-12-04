@@ -1,6 +1,8 @@
 import Svg from "@/components/Svg";
 import Logo from "@/components/logo"
 import { useTheme } from "next-themes";
+import Layout from "./Layout";
+import MobileMenu from "./MobileMenu";
 
 export default function Navbar({Darktheme}) {
   const { theme, setTheme } = useTheme()
@@ -13,7 +15,8 @@ export default function Navbar({Darktheme}) {
     }
   }
   return (
-   <header className="flex justify-between p-[80px]">
+   <Layout>
+    <header className="flex justify-between p-[80px]">
       <div><Logo/></div>
       <div className="flex justify-center items-center padding-[16px] gap-[24px]">
         <ul className=" flex justify-center items-center gap-[24px]">
@@ -28,5 +31,10 @@ export default function Navbar({Darktheme}) {
        </div>
       </div>
     </header>
+    {
+      isOpen && <MobileMenu setIsOpen={setIsOpen} />
+    }
+   </Layout>
+    
   );
 }

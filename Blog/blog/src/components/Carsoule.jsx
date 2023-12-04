@@ -3,7 +3,7 @@ import Bttn from "./Bttn"
 import Arrow from "./Icon/Arrow"
 export default function Carsoule () {
     return(
-       <div className="flex flex-col items-center justify-center relative gap-2">
+       <div className="flex flex-col items-center justify-center relative gap-3">
             <CarsouleImg/>
             <div className="border p-[40px] w-[598px] h-[252px] bg-white absolute left-[530px] top-[330px] rounded-[8px]">
                 <Bttn/>

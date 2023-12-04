@@ -3,7 +3,7 @@ import SearchIcon from "./Icon/SearchIcon"
 
 export default function Navbar(){
     return(
-        <div className="flex justify-between items-center h-[100px] pl-[350px] pr-[350px]">
+        <div className="flex justify-center items-center h-[100px]  gap-[118px]">
             <Headlogo/>
                 <div className="flex gap-[21px] justify-center items-center">
                     <ul className=" flex w-[667px]  justify-center gap-[40px]">

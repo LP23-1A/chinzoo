@@ -24,7 +24,9 @@ const data = [
 
 const Trending = () => {
     return( 
-        <div className="flex justify-center items-center gap-[20px]">
+        <div className="flex flex-col gap-[30px]">
+            <h1 className="text-[24px] font-bold">Trending</h1>
+            <div className="flex justify-center items-center gap-[20px]">
             {
                 data.map((el) => {
                     return (
@@ -37,6 +39,7 @@ const Trending = () => {
                     )
                 })
             }
+        </div>
         </div>
     )
 }

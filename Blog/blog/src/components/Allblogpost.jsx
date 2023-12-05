@@ -21,22 +21,42 @@ const data = [
 
 const Allblogpost = () => {
     return(
-        <div className="flex justify-center items-center gap-[20px]">
-            {
-                data.map((el) => {
-                    return (
-                        <div className="p-[16px] w-[392px] h-[476px] flex flex-col border justify-between items-center rounded-[12px]">
-                            <img src={el.url} />
-                            <div className="h-[188px] flex flex-col justify-between items-start">
-                                <button className="pt-[4px] pb-[4px] pr-[10px] pl-[10px] bg-[#eef2ff] rounded-[8px] text-[#818cf8]">{el.btn}</button>
-                                <p className="text-[24px]">{el.title}</p>
-                                <p className="text-[16px] text-[#97989F]">{el.date}</p>
+       <div className=" flex  flex-col gap-[32px]">
+            <div className="flex flex-col gap-[32px]">
+                <div className="w-[1216px] flex flex-col justify-center gap-[32px]">
+                    <div>
+                        <h1 className="text-[24px] font-bold">All Blog Post</h1>
+                    </div>
+                    <div className=" flex gap-[30px]">
+                        <ul className=" flex gap-[20px]">
+                            <li className="hover:text-[#D4A373]">All</li>
+                            <li className="hover:text-[#D4A373]">Design</li>
+                            <li className="hover:text-[#D4A373]">Travel</li>
+                            <li className="hover:text-[#D4A373]">Fashion</li>
+                            <li className="hover:text-[#D4A373]">Technology</li>
+                            <li className="hover:text-[#D4A373]">Branding</li>
+                        </ul>
+                        <p className="w-[826px] flex justify-end">View All</p>
+                    </div>
+                </div>
+            </div>
+            <div className="flex justify-center items-center gap-[20px]">
+                {
+                    data.map((el) => {
+                        return (
+                            <div className="p-[16px] w-[392px] h-[476px] flex flex-col border justify-between items-center rounded-[12px]">
+                                <img src={el.url} />
+                                <div className="h-[188px] flex flex-col justify-between items-start">
+                                    <button className="pt-[4px] pb-[4px] pr-[10px] pl-[10px] bg-[#eef2ff] rounded-[8px] text-[#818cf8]">{el.btn}</button>
+                                    <p className="text-[24px]">{el.title}</p>
+                                    <p className="text-[16px] text-[#97989F]">{el.date}</p>
+                                </div>
                             </div>
-                        </div>
-                    )
-                })
-            }
-        </div>
+                        )
+                    })
+                }
+            </div>
+       </div>
     )
 }
 export default Allblogpost

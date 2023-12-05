@@ -1,9 +1,8 @@
 import Navbar from "@/components/Navbar"
 import Carsoule from "@/components/Carsoule"
 import Trending from "@/components/Trending"
-
+import Allblogpost from "@/components/Allblogpost"
 import Footer from "@/components/Footer"
-import AllBlog from "@/components/AllBlog"
 
 export default function Home() {
   return (
@@ -12,8 +11,7 @@ export default function Home() {
           <Navbar/>
           <Carsoule/>
           <Trending/>
-          <AllBlog/>
-        
+          <Allblogpost/>
           <Footer/>
         </div>
     </main>

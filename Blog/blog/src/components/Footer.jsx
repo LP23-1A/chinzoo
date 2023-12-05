@@ -1,11 +1,12 @@
 import SearchIcon from "./Icon/SearchIcon"
 import Socialicon from "./Icon/Socialicon"
+import Logo from "./Icon/Logo"
 
 export default function Footer () {
     return(
         <div className="w-[100%] h-[495px] bg-[#E8E8EA] pt-[64px] pl-[352px] pr-[352px]">
-            <div className="w-[100%] h-[100%] flex flex-col justify-between  bg-red-200 gap-[20px]">
-                <div className=" flex items-start justify-between">
+            <div className="w-[100%] h-[100%] flex justify-center items-center flex-col gap-[20px]">
+                <div className=" flex items-start gap-[30px] w-[1216px]">
                     <div className="flex flex-col h-[236px] w-[289px] justify-between">
                         <div className="flex flex-col gap-[12px]">
                             <h1>About</h1>
@@ -16,19 +17,32 @@ export default function Footer () {
                             <p>Phone : 880 123 456 789</p>
                         </div>
                     </div>
-                    <div className="w-[521px] flex justify-center border">
+                    <div className="w-[521px] flex justify-center border gap-[8px]">
                         <ul>
                             <li>Home</li>
                             <li>Blog</li>
                             <li>Contact</li>
                         </ul>
                     </div>
-                    <div className="">
-                        <Socialicon/>
-                    </div>
+                    
+                    <Socialicon/>
+                
                 </div>
-                <div>
-
+                <div className="w-[1216px] h-[95px] pt-[32px] pb-[32px] flex border-t-[1px] flex justify-between">
+                    <div className="flex gap-[10px]">
+                        <div>
+                            <Logo/>
+                        </div>
+                        <div>
+                            <h1>Meta<span className="">Blog</span></h1>
+                            <p>© All Rights Reserved.</p>
+                        </div>
+                    </div>
+                    <div className="w-[921px] h-[24px] flex justify-end gap-[32px]">
+                        <p>Terms of Use</p>
+                        <p>Privacy Policy</p>
+                        <p>Cookie Policy</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -25,7 +25,7 @@ const data = [
 const Trending = () => {
     return( 
        <div className="flex flex-col gap-[30px]">
-        <h1 className="font-bold text-[24px]">Terending</h1>
+        <h1 className="font-bold text-[24px]">Trending</h1>
          <div className="flex justify-center items-center gap-[20px]">
             {
                 data.map((el) => {

@@ -39,7 +39,7 @@ export default function Footer () {
                         </div>
                     </div>
                     <div className="w-[921px] h-[24px] flex justify-end gap-[32px]">
-                        <p>Terms of Use</p>
+                        <p className="text-black">Terms of Use</p>
                         <p>Privacy Policy</p>
                         <p>Cookie Policy</p>
                     </div>

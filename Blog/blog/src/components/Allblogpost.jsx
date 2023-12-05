@@ -7,7 +7,7 @@ const data = [
     },
     {
         url: "https://s3-alpha-sig.figma.com/img/7465/4a8f/67369b797c8fb2e96a533fd515fb2939?Expires=1702857600&Signature=p9omvh-MQPdM4vpXwpf3rvtgA73pKgfoOOVtTmOTBgUeqmEsNONRUhce6hVuwVZosNN4iZs0EQZGhZPFd02koQQUfTXzi6jC5wZzcO8RNgoRiFaR02M2BG1-kmnFx4CkZxdpLb-59ho6Tc4nsSxVhMYFbQONEsk~LnOfON8z-jEN95Ru3T-8NBCOAY3PrfKC~-mr~X30eFYo06bksEgok0Vj0EzkzN9DETfgEn7JuFHpqcKR8CGuL4gsbXuxvSpF3qAnt1dNF7~~Q4-VCU3MzZeqvCz-33jbdgD~-NFPDAd6sUZTU-p2bE3HZOH2~4TjOmfInY7Ai-VkhkFC-K-Njg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-        btn: "technology",
+        btn: "design",
         title: "The Impact of Technology on the Workplace: How Technology is Changing",
         date: "August 20, 2022"
     },

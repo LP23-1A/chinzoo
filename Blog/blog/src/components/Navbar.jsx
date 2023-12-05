@@ -12,7 +12,7 @@ export default function Navbar(){
                         <li>Contact</li>
                     </ul>
                     <div className="border pt-[8px] pb-[8px] flex pl-[16px] pr-[8px] gap-[12px]">
-                            <input className=""type="search" name="" id="" placeholder="search"/>
+                            <input className="p-[5px]"type="search" name="" id="" placeholder="search"/>
                             <button><SearchIcon/></button>
                     </div>
                 </div>

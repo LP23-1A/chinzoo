@@ -21,7 +21,7 @@ const data = [
 
 const Allblogpost = () => {
     return(
-       <div className=" flex  flex-col gap-[32px]">
+       <div className=" flex  flex-col gap-[32px] items-center">
             <div className="flex flex-col gap-[32px]">
                 <div className="w-[1216px] flex flex-col justify-center gap-[32px]">
                     <div>
@@ -36,7 +36,7 @@ const Allblogpost = () => {
                             <li className="hover:text-[#D4A373]">Technology</li>
                             <li className="hover:text-[#D4A373]">Branding</li>
                         </ul>
-                        <p className="w-[826px] flex justify-end">View All</p>
+                        <button className="w-[826px] flex justify-end hover:text-[#D4A373]">View All</button>
                     </div>
                 </div>
             </div>
@@ -56,6 +56,7 @@ const Allblogpost = () => {
                     })
                 }
             </div>
+            <button className="pt-[12px] pb-[12px] pl-[20px] pr-[20px] rounded-[12px] bg-gray-100 border hover:bg-gray-200">Load More</button>
        </div>
     )
 }

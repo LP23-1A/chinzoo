@@ -17,6 +17,7 @@ const data = [
         title: "The Impact of Technology on the Workplace: How Technology is Changing",
         date: "August 20, 2022"
     },
+  
 ]
 
 const Allblogpost = () => {
@@ -40,7 +41,7 @@ const Allblogpost = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center items-center gap-[20px]">
+            <div className="flex justify-center items-center gap-[20px] flex-wrap w-[1216px]">
                 {
                     data.map((el) => {
                         return (
@@ -60,4 +61,4 @@ const Allblogpost = () => {
        </div>
     )
 }
-export default Allblogpost
+export default Allblogpost  

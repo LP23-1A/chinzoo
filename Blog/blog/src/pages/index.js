@@ -30,26 +30,26 @@ export default function Home() {
           <Navbar/>
           <Carsoule/>
           <Trending/>
+          <div className="w-[1216px] flex flex-wrap gap-[20px] justify-between">
+          <Allblogpost/>
             {data.map((el, index) => {        
              return (          
-              <div className="flex justify-center items-center gap-[20px] flex-wrap w-[1216px]">
-                  <div  className=""          
-                key={index}            
-                style={{              
-                  backgroundImage: `url(${el.social_image})`,              
-                  height: "240px",              
-                  width: "360px",           
-                  background: "cover"
-                  }}         
-                  >           
-                </div>
-                <button className="pt-[4px] pb-[4px] pr-[10px] pl-[10px] bg-[#eef2ff] rounded-[8px] text-[#818cf8]">{el.tag_list}</button>
-                <h1>{el.title}</h1>
-              </div>);
+              <div className="w-[392px] h-[476px] p-[16px] border rounded-[6px]">
+                  <div className="flex">
+                  <div className="flex justify-start items-start flex-col gap-[10px]">
+                    <img className="w-[360px] rounded-[6px] h-[240px]" src={el.social_image}/>
+                    <button className="pt-[4px] pb-[4px] pr-[10px] pl-[10px] bg-[#eef2ff] rounded-[8px] text-[#818cf8]">{el.tag_list}</button>
+                    <h1 className="text-[24px] font-bold">{el.title}</h1>
+                    <p className="text-[16px] text-[#97989F]">{el.readable_publish_date}</p>
+                  </div>
+              </div>
+              </div>
+              );
                    
                 })}      
-              <button onClick={handler}>load more</button>
-          <Allblogpost/>
+
+          </div>
+              <button onClick={handler} className="pt-[12px] pb-[12px] pl-[20px] pr-[20px] rounded-[12px] bg-gray-100 border hover:bg-gray-200">load more</button>
           <Footer/>
         </div>
     </main>

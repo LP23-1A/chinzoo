@@ -36,13 +36,13 @@ export default function Home() {
              return (          
               <div className="w-[392px] h-[476px] p-[16px] border rounded-[6px]">
                   <div className="flex">
-                  <div className="flex justify-start items-start flex-col gap-[10px]">
-                    <img className="w-[360px] rounded-[6px] h-[240px]" src={el.social_image}/>
-                    <button className="pt-[4px] pb-[4px] pr-[10px] pl-[10px] bg-[#eef2ff] rounded-[8px] text-[#818cf8]">{el.tag_list}</button>
-                    <h1 className="text-[24px] font-bold">{el.title}</h1>
-                    <p className="text-[16px] text-[#97989F]">{el.readable_publish_date}</p>
+                    <div className="flex justify-start items-start flex-col gap-[10px]">
+                      <img className="w-[360px] rounded-[6px] h-[240px]" src={el.social_image}/>
+                      <button className="pt-[4px] pb-[4px] pr-[10px] pl-[10px] bg-[#eef2ff] rounded-[8px] text-[#818cf8]">{el.tag_list}</button>
+                      <h1 className="text-[24px] font-bold">{el.title}</h1>
+                      <p className="text-[16px] text-[#97989F]">{el.readable_publish_date}</p>
+                    </div>
                   </div>
-              </div>
               </div>
               );
                    

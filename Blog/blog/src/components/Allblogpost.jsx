@@ -20,7 +20,6 @@ const Allblogpost = () => {
                     </div>
                 </div>
             </div>
-           
        </div>
     )
 }

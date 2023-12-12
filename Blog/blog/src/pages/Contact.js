@@ -1,8 +1,12 @@
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
+import { useRouter } from "next/router"
 
 export default function Contact () {
- 
+    const router = useRouter()
+    const Error = () => {
+        router.push('/Error')
+    }
     return (
        <div className="flex flex-col justify-between items-center h-[fit]">
         <Navbar/>
@@ -35,7 +39,7 @@ export default function Contact () {
                     </div>
                     <input className="w-[100%] rounded-[5px] py-[14px] pl-[20px] pr-[14px]" placeholder="Subject"/>
                     <textarea className="w-[478px] h-[134px] py-[14px] pl-[20px] pr-[14px] rounded-[5px]" placeholder="Write a message"/>
-                    <button className="bg-blue-600 text-white rounded-[8px] py-[10px] px-[16px] rounded-mdls">Send Message</button>
+                    <button onClick={Error} className="bg-blue-600 text-white rounded-[8px] py-[10px] px-[16px] rounded-mdls">Send Message</button>
                 </div>
             </div>
         <Footer/>

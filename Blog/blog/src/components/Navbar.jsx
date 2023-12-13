@@ -20,8 +20,8 @@ export default function Navbar(){
                         <li className=" cursor-pointer">Blog</li>
                         <li className=" cursor-pointer" onClick={contact}>Contact</li>
                     </ul>
-                    <div className="border pt-[8px] pb-[8px] flex pl-[16px] pr-[8px] gap-[12px]">
-                            <input className="p-[5px]"type="search" name="" id="" placeholder="search"/>
+                    <div className="rounded-[8px] pt-[8px] pb-[8px] bg-[#F4F4F5] flex pl-[16px] pr-[8px] gap-[12px]">
+                            <input className="bg-[#F4F4F5] p-[5px]"type="search" name="" id="" placeholder="search"/>
                             <button ><SearchIcon/></button>
                     </div>
                 </div>

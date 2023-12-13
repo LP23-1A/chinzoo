@@ -24,7 +24,7 @@ const Carousel = () => {
             <div className="w-[1216px] relative text-black rounded-lg">
                 <img src={ CarouselData[activeIndex].url } className="w-full max-h-[650px] rounded-lg" />
                 <div className="bg-white rounded-lg absolute left-0 bottom-0 p-7 flex flex-col gap-1 max-w-[518px] m-3 border border-[#E8E8EA]">
-                    <button onClick={useParams(filter)} className="text-[19px] font-normal bg-[#4B6BFB] p-1 px-2 rounded-md w-fit">
+                    <button onClick={useParams(filter)} className="text-[19px] font-normal bg-blue-600 text-white p-1 px-2 rounded-md w-fit">
                         { CarouselData[activeIndex].btn }
                     </button>
                     <p className="font-bold text-3xl">

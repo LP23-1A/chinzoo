@@ -28,7 +28,7 @@ export default function Footer () {
                     <Socialicon/>
                 
                 </div>
-                <div className="w-[1216px] h-[95px] pt-[32px] pb-[32px] flex border-t-[1px] flex justify-between">
+                <div className="w-[1216px] h-[95px] pt-[32px] pb-[32px] flex border-t-[1px] justify-between">
                     <div className="flex gap-[10px]">
                         <div>
                             <Logo/>

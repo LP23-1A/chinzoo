@@ -4,10 +4,10 @@ import Logo from "./Icon/Logo"
 
 export default function Footer () {
     return(
-        <div className="w-[100%] h-[495px] bg-[#E8E8EA] text-[#696A75] pt-[64px] pl-[352px] pr-[352px]">
+        <div className="w-[100%] h-[495px] bg-[#E8E8EA]  text-[#696A75] pt-[64px] pl-[352px] pr-[352px]">
             <div className="w-[100%] h-[100%] flex justify-center items-center flex-col gap-[20px]">
-                <div className=" flex items-start gap-[30px] w-[1216px]">
-                    <div className="flex flex-col h-[236px] w-[289px] justify-between">
+                <div className=" flex gap-[30px] w-[] max-sm:flex-col justify-center items-center">
+                    <div className="flex flex-col h-[236px] w-[289px] justify-between max-sm:hidden">
                         <div className="flex flex-col gap-[12px]">
                             <h1>About</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
@@ -28,7 +28,7 @@ export default function Footer () {
                     <Socialicon/>
                 
                 </div>
-                <div className="w-[1216px] h-[95px] pt-[32px] pb-[32px] flex border-t-[1px] justify-between">
+                <div className="w-[100%] h-[95px] pt-[32px] pb-[32px] flex border-t-[1px] justify-between">
                     <div className="flex gap-[10px]">
                         <div>
                             <Logo/>
@@ -38,7 +38,7 @@ export default function Footer () {
                             <p>© All Rights Reserved.</p>
                         </div>
                     </div>
-                    <div className="w-[921px] h-[24px] flex justify-end gap-[32px]">
+                    <div className="w-[921px] h-[24px] flex justify-end gap-[32px] max-sm:hidden">
                         <p className="text-black">Terms of Use</p>
                         <p>Privacy Policy</p>
                         <p>Cookie Policy</p>

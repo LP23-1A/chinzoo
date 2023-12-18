@@ -26,13 +26,7 @@ const Allblogpost = () => {
  
  const handler = () => getData("https://dev.to/api/articles")
   
-//  );
-//  count [Count, setCount] = useState(6);
 
-// const handler = () => {
-//   setCount ((prev) => prev + 3)
-// }
- 
  const handlerInputValue = (value) => {
    valueRef.current =  value;
  }
@@ -42,7 +36,7 @@ const Allblogpost = () => {
  }, []);
     return(
     <div className="flex flex-col justify-center items-center gap-[20px]">
-         <div className="w-[1216px] flex flex-wrap gap-[20px] justify-between">
+         <div className="w-[1216px] flex flex-wrap gap-[20px] justify-center items-center">
          <div className="flex flex-col gap-[32px] w-[1216px]">
                             <h1 className="text-[24px] font-bold">All Blog Post</h1>
                            <div className="flex gap-[20px]">
@@ -53,7 +47,7 @@ const Allblogpost = () => {
                            </div>
                            <link hreg></link>
                 </div>  
-                  <div className="flex flex-wrap gap-[20px]">
+                  <div className="flex flex-wrap gap-[20px] max-sm:flex-col">
                     {data.map((el, index) => {        
                       return (          
                         <div onClick={Error} className="cursor-pointer">

@@ -14,7 +14,7 @@ export default function Navbar(){
     return(
         <div className="flex justify-center items-center h-[100px]  gap-[118px]">
             <Headlogo/>
-                <div className="flex gap-[21px] justify-center items-center">
+                <div className="flex gap-[21px] justify-center items-center max-sm:hidden">
                     <ul className=" flex w-[667px]  justify-center gap-[40px]">
                         <li onClick={Home} className=" cursor-pointer">Home</li>
                         <li className=" cursor-pointer">Blog</li>

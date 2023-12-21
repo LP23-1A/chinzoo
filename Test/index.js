@@ -14,7 +14,14 @@ app.get('/', async (request, response) =>{
     response.send({ success:true, res}).end();
 });
  app.post('/', async (request, response)=> {
-    const newUrl = await Url.create(request.body);
+    const {url} = request.body
+    const newUrl = await Url.create(
+        {
+            LongUrl : url,
+            ShortUrl : model.id = nanoid(10)
+
+        }
+    )
     response.send({ success: true, urls: newUrl}).end();
  });
 

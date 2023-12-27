@@ -1,17 +1,15 @@
-import pg from "pg";
-import dotenv from "dotenv"
+import pg from 'pg';
+import dotenv from 'dotenv';
 
-const {Pool} = pg;
+const { Pool } = pg;
 
 dotenv.config();
 
-export const pool = new Pool {
-
+export const pool = new Pool({
     ssl: true,
- 
     connectionString: process.env.DB_URL
-}
+})
 
-// module.exports = {
-//     query: (text, params) => pool.query(text.params)
-// }
+
+
+

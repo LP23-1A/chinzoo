@@ -1,7 +1,6 @@
-import Login from '@/components/Login'
-import './globals.css'
-import Register from '@/components/Register'
-import Loading from '@/components/Loading'
+import Login from '@/app/Login/page'
+import Register from '@/app/Register/page'
+import Loading from '@/app/Loading/page'
 import Step from '@/components/Step'
 
 export default function Home() {
@@ -9,7 +8,7 @@ export default function Home() {
 return (
     <main>
       <div>
-        <Step/>
+        
       </div>
     </main>
   )

@@ -4,7 +4,7 @@ import Iconn from '@/components/Iconn'
 import axios from 'axios'
 import { useState } from 'react'
 
-const api = "http://localhost:8000/"
+const api = "http://localhost:8000/users"
 
 
 export default function Register () {

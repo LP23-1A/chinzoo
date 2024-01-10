@@ -4,7 +4,9 @@ import Iconblue from "@/components/Iconblue"
 import Plus from "@/components/Plus"
 import Shape from "@/components/Shape"
 import Svg from "@/components/Svg"
+import BarChart from "@/components/barchart"
 import Link from "next/link"
+import Pie from "@/components/Pie"
 
 
 export default function Dashboard (){
@@ -18,12 +20,16 @@ export default function Dashboard (){
                         <button className="text-black text-[16px]">Record</button>
                     </Link>
                 </div>
-                <div>  
+                <div className="flex items-center gap-4">
                     <button className="flex bg-[#0166FF] text-white w-[99px] h-[32px] rounded-[20px] justify-center items-center gap-[4px]">
                     <Svg/>
                     Record
                     </button>
-                   
+                    <div className="avatar">
+                        <div className="w-10 rounded-full">
+                            <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                    </div>
                     
                 </div>
             </nav>
@@ -90,9 +96,10 @@ export default function Dashboard (){
                     </div>
                     
                 </div>
-            </section>
-            <section>
-                 
+                <div className="flex">
+                    <BarChart/>
+                    <Pie/>
+                </div>
             </section>
         </div>
     )

@@ -49,7 +49,7 @@ const BarChart = () => {
 
   return (
     <>
-      <div className="w-[800px] relative p-1 bg-white">
+      <div className="w-[720px] rounded-2xl relative p-1 bg-white">
         <Bar
           data={chartData}
           options={chartOptions}

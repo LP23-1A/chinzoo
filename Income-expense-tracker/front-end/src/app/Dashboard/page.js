@@ -33,7 +33,7 @@ export default function Dashboard (){
                     
                 </div>
             </nav>
-            <section className="bg-[#efeff5] w-[100%] h-[100vh] pl-[120px] pr-[120px] pt-[32px] ">
+            <section className="bg-[#efeff5] w-[100%] h-[100vh] pl-[120px] pr-[120px] pt-[32px] flex flex-col gap-[32px] ">
                 <div className="flex justify-between">
                     <div className="bg-[#0166FF] rounded-[20px] relative flex flex-col px-[30px] py-[30px] justify-between w-[424px] h-[249px]">
                         <Iconblue/>
@@ -96,7 +96,7 @@ export default function Dashboard (){
                     </div>
                     
                 </div>
-                <div className="flex">
+                <div className="flex justify-between">
                     <BarChart/>
                     <Pie/>
                 </div>

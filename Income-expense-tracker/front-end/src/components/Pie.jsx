@@ -73,7 +73,7 @@ const PieChart = () => {
 
   return (
     <>
-      <div className="w-full relative" style={{ width: "300px", height: "270px" }}>
+      <div className="w-[800px] relative" style={{ width: "300px", height: "270px" }}>
         <Pie data={chartData} options={chartOptions} />
       </div>
     </>

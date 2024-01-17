@@ -31,14 +31,14 @@ export default function Record(){
                     
                 </div>
             </nav>
-            <section className="w-[894]  bg-[#efeff5] flex pr-[120px] pl-[120px] justify-between px-[24px] py-[24px]">
+            <section className="w-[894] gap-[20px] h-fit  bg-[#efeff5] flex pr-[120px] pl-[120px] justify-between px-[24px] py-[24px]">
                 <div className="h-[100vh] bg-white rounded-[8px] w-[282px] border-1 py-[24px] px-3 flex flex-col gap-[24px]">
                     <div className="flex flex-col gap-[24px]">
                         <p className="text-[24px] text-black">Records</p>
                         <button className="btn text-white bg-[#0166FF] h-[32px] border-none gap-0 hover:bg-[#0166FF]" onClick={()=>document.getElementById('my_modal_3').showModal()} >+ Add</button>                          
                         <Dialog/>
                     </div>
-                    <input className="bg-gray-100 border-solid px-[10px] py-[5px] w-[100%] rounded-[8px]" type="search" placeholder="search"/>
+                    <input className="bg-gray-100 border-solid px-[10px] border py-[5px] w-[100%] rounded-[8px]" type="search" placeholder="search"/>
                     <div className="flex flex-col gap-[16px]">
                         <p className="text-black text-[16px] font-bold">Types</p>
                         <div className="flex flex-col px-[10px]">

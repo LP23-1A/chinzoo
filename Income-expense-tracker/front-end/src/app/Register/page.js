@@ -1,8 +1,9 @@
 'use client'
-import Link from 'next/link'
 import Iconn from '@/components/Iconn'
 import axios from 'axios'
 import { useState } from 'react'
+import { useRouter } from "next/navigation" 
+import Link from 'next/link'
 
 const api = "http://localhost:8000/users"
 
@@ -20,6 +21,12 @@ export default function Register () {
       console.error("singup error", error);
     }
   }
+  const router = useRouter();
+  const keys = { name, email, password };
+  const Currency = () => {
+    router.push("/Currency");
+    localStorage.setItem("data", JSON.stringify(keys));
+  };
     return(
         <div className="flex">
             <div className='w-[50%] h-[100vh] bg-white flex items-center justify-center'>
@@ -34,7 +41,7 @@ export default function Register () {
                  <input className='h-[48px] rounded-[8px] px-[20px] text-black border bg-gray-100' placeholder='Email' type="email" value={(email)} onChange={(e)=> setEmail(e.target.value)}></input>
                  <input className='h-[48px] rounded-[8px] px-[20px] text-black border bg-gray-100' placeholder='Password' type="password" value={(password)} onChange={(e)=> setPassword(e.target.value)}></input>
                  <input className='h-[48px] rounded-[8px] px-[20px] text-black border bg-gray-100' placeholder='Re-Password'type="password"></input>
-                <button className=' text-white w-[100%] py-[10px] rounded-[20px] bg-[#0166FF]' onClick={axiosing}>
+                <button onclick={Currency} className=' text-white w-[100%] py-[10px] rounded-[20px] bg-[#0166FF]' onClick={axiosing}>
                   Sign up
                 </button>
                 </div>
@@ -45,11 +52,10 @@ export default function Register () {
                   </button>
                   </Link>
                   
-                  <Link href="/Loading">
-                 <button className='text-[#0166FF]'>
+                 
+                 <button onClick={()=>router.push("/Login")} className='text-[#0166FF]'>
                     Log in
                   </button>
-                  </Link>
                   
                 </div>
 

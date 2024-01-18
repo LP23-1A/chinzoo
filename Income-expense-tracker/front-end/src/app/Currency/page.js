@@ -52,7 +52,7 @@ export default function Currency () {
                         </label>
                 </div>
            </div>         
-           <button className="bg-[#0166FF] text-white w-[384px] h-[48px] rounded-[20px]">Confirm</button>
+           <button onClick={Finish} className="bg-[#0166FF] text-white w-[384px] h-[48px] rounded-[20px]">Confirm</button>
             </div>
         </div>
     )

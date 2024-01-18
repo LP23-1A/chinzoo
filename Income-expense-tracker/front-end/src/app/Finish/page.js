@@ -45,7 +45,7 @@ export default function Select () {
             </div>
        </div>
        <Link href="/Dashboard">
-            <button className="bg-[#0166FF] text-white w-[384px] h-[48px] rounded-[20px]">Go to dashboard</button>
+            <button onClick={handlerName} className="bg-[#0166FF] text-white w-[384px] h-[48px] rounded-[20px]">Go to dashboard</button>
         </Link> 
         </div>
     </div>

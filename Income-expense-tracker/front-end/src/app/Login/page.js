@@ -16,6 +16,8 @@ export default function Login () {
     console.log(res.data);
     if ((res.data == 'success')) {
       router.push("/Loading")
+    } else {
+      ((res.data != 'error'))
     }
   }
     return(

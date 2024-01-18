@@ -1,9 +1,26 @@
+"use client"
 import Icon from "@/components/Iconn"
 import Check from "@/components/Check"
 import Link from "next/link"
+import { useRouter } from "next/navigation" 
+import { useState } from "react";
+
 
 
 export default function Select () {
+  const router = useRouter();
+  const data = JSON.parse(localStorage.getItem("data"));
+  console.log(data);
+  const handlerName = async () => {
+    let res = await axios.post(api, {
+      name: data.name,
+      email: data.email,
+      password: data.password,
+      currency_type: data.currency,
+    });
+    router.push("/dashboard");
+    console.log("success");
+  };
     return(
         <div  className="flex justify-center items-center w-[100%] h-[100vh] gap-[141px] flex-col bg-white">
         <div className="mt-[40px] gap-[48px] flex flex-col">

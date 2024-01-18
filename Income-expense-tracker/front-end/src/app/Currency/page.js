@@ -1,9 +1,25 @@
+"use client"
 import Icon from "@/components/Iconn"
 import Money from "@/components/Money"
 import Link from "next/link"
-
+const api = 'http://localhost:8000/users/' 
+import { useRouter } from "next/navigation" 
+import { useState } from "react";
 
 export default function Currency () {
+  const router = useRouter();
+  const [currency, setCurrens] = useState("");
+  const Finish = () => {
+    try {
+      let data = JSON.parse(localStorage.getItem("data"));
+      localStorage.setItem(
+        "data",
+        JSON.stringify({ ...data, currency: currency })
+      );
+    } catch (error) {}
+    router.push("/Finish");
+  };
+
     return(
         <div  className="flex justify-center items-center w-[100%] h-[100vh] gap-[141px] flex-col bg-white">
             <div className="mt-[40px] flex flex-col gap-[48px]">
@@ -25,7 +41,7 @@ export default function Currency () {
                     </div>
                 <div>
                     <label className="form-control w-full max-w-xs">
-                        <select className="select select-bordered bg-white text-black">
+                        <select value={Currency}  onChange={(e) => setCurrens(e.target.value)} className="select select-bordered bg-white text-black">
                             <option disabled selected>сонгоно уу</option>
                             <option>MNT - Mongolian Tugrug</option>
                             <option>USD - AMERICAN DOLLAR</option>
@@ -35,10 +51,8 @@ export default function Currency () {
                             </div>
                         </label>
                 </div>
-           </div>
-           <Link href="/Finish">
+           </div>         
            <button className="bg-[#0166FF] text-white w-[384px] h-[48px] rounded-[20px]">Confirm</button>
-           </Link>  
             </div>
         </div>
     )

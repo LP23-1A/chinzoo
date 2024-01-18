@@ -4,7 +4,7 @@ import Iconn from '@/components/Iconn'
 import axios from 'axios'
 import { useState } from "react";
 import { useRouter } from 'next/navigation';
-const API = 'http://localhost:8000/users/'  
+const API = 'http://localhost:8000/users/user'  
 
 
 export default function Login () {
@@ -14,8 +14,8 @@ export default function Login () {
   const handler = async () => {
     let res = await axios.post(API, { email: email, password: password})
     console.log(res.data);
-    if ((res.data = 'success')) {
-      router.push("/Dashboard")
+    if ((res.data == 'success')) {
+      router.push("/Loading")
     }
   }
     return(
@@ -37,7 +37,7 @@ export default function Login () {
                 <div className='flex justify-center gap-[10px] text-black'>
                   <Link href="/Register">
                   <button>
-                  Dont have account?
+                    Dont have account?
                   </button>
                   
               

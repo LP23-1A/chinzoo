@@ -1,6 +1,10 @@
+"use client"
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import PersonIcon from '@mui/icons-material/Person';
+import * as React from 'react';
+import Loginmodal from './Loginmodal';
+
 
 
 export default function Navbar () {
@@ -24,13 +28,13 @@ export default function Navbar () {
                     <SearchIcon className='text-black'/>
                     <input placeholder="хайх" className=" text-black p-[] material-icons-outlined "/>
                 </div>            
-                <div className='flex gap-2'>
-                    <p className="text-black">сагс</p>
+                <div className='flex gap-1 items-center'>
                     <ShoppingBasketIcon className='text-black'/>
+                    <button className="text-black">САГС</button>
                 </div>
-                <div className='flex gap-2'>
-                    <p className="text-black">нэвтрэх</p>     
+                <div className='flex gap-1 items-start'>
                     <PersonIcon className='text-black'/>      
+                     <Loginmodal/>
                 </div>    
             </div>
         </nav>

@@ -2,6 +2,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
+
 export default function Footer () {
     return(
         <div className="w-[100%] h-[400px] bg-[#18BA51] py-[50px] px-[220px]">

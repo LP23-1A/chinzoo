@@ -31,7 +31,7 @@ export default function Grouop (){
             {
                 data.map((el)=> {
                     return(
-                        <div className=" mt-[122px] rounded-[10px] gap-[50px] flex flex-col bg-white border-2 border-gray-200 w-[364px] h-[200px] p-[26px]">
+                        <div className="box-shadow:4px 4px 12px 0px rgba(0, 0, 0, 0.10); rounded-[10px] gap-[50px] flex flex-col bg-white border-2 border-gray-200 w-[364px] h-[200px] p-[26px]">
                             <div><span className='text-[#18BA51]'>{el.logo}</span></div>
                             <div>
                                 <p className="font-bold text-[18px] text-black">{el.title}</p>

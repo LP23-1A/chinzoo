@@ -7,7 +7,7 @@ import { category } from "../router/Catergory";
 
 
 type FoodType = {
-  Foodname: string;
+  name: string;
   image: string;
   ingeredient: string;
   price: number;
@@ -25,16 +25,16 @@ const createFood = async (req: Request, res: Response) => {
       folder: "food",
     });
     const {
-      Foodname, ingeredient, price, discount, categoryId,
+      name, ingeredient, price, discount, categoryId,
     }: Required<FoodType> = req.body;
     const food = await FoodModel.create({
-      Foodname: Foodname,
+      name: name,
       image: cloudinaryRes.secure_url,
       ingeredient: ingeredient,
       price: price,
       discount: discount,
     });
-    food.save();
+    food.save()
 
     await CategoryModel.findOneAndUpdate(
       {

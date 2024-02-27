@@ -4,10 +4,12 @@ import axios from "axios"
 import React, {useState} from "react"
 import { useRouter } from "next/navigation"
 
+
 const API = "http://localhost:8000/auth/signup"
 
 export default function Register () {
 
+    
     const router = useRouter();
 
         const [username, setusername] = useState("");

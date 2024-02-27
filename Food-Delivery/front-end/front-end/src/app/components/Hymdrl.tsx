@@ -1,3 +1,4 @@
+import axios from "axios";
 
 let data = [
     {
@@ -21,6 +22,18 @@ let data = [
         price:"14,800₮"
     },
 ];
+
+const FoodCard = (count: any, discount: any) => {
+    const BASE_URL = "http://localhost:8000/category/one";
+    const handler = async () => {
+      try {
+        const { data } = await axios.post(BASE_URL, { name: "Soup" });
+        console.log(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+}
 
 export default function Hymdrl () {
     return(

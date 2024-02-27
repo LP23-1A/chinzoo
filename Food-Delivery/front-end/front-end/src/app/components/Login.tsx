@@ -6,7 +6,9 @@ import { useRouter } from "next/navigation"
 import { useState } from "react"
 
 export default function Login() {
-
+    
+    const API = "http://localhost:8000/auth/login";
+    
     const router = useRouter();
 
     const [input, setinput] = useState({
@@ -16,7 +18,6 @@ export default function Login() {
 
     const [error, seterror] = useState('');
 
-    const API = "http://localhost:8000/auth/login";
 
     const submitHandler = async (e: any) => {
         e.preventDefault();
